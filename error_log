@@ -5,3 +5,7 @@
 [02-Sep-2013 09:21:01 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'triangon_user3'@'localhost' (using password: YES) in /home3/triangon/public_html/phonegap-mysql/conex.php on line 9
 [02-Sep-2013 09:22:27 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 23
 [02-Sep-2013 09:39:20 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 23
+[02-Sep-2013 10:37:28 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 23
+[02-Sep-2013 10:41:31 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 23
+[02-Sep-2013 11:30:43 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 22
+[02-Sep-2013 11:34:37 America/Denver] PHP Notice:  Undefined index: jsoncallback in /home3/triangon/public_html/phonegap-mysql/conex.php on line 22

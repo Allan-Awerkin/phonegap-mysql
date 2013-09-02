@@ -19,6 +19,5 @@ while($row = mysql_fetch_assoc($result)) {
 }
 
 mysql_close($con);
-
 echo $_GET['jsoncallback'] . '(' . json_encode($records) . ');';
 ?>
