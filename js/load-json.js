@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	 reload();
+});
+
+function reload(){
+
 	var output = $('#output');
 
 	$.ajax({
@@ -19,4 +24,5 @@ $(document).ready(function(){
 			output.text('Hubo un error al cargar los datos');
 		}
 	});
-});
+
+}
