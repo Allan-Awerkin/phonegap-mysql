@@ -1,10 +1,12 @@
 $(document).ready(function(){
+
 	 reload();
 });
 
 function reload(){
 
 	var output = $('#output');
+	output.html("");
 
 	$.ajax({
 		url: 'http://triangon.com/phonegap-mysql/conex.php',
