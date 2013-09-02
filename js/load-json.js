@@ -55,7 +55,7 @@ function getPage(name){
 			$.each(data, function(i,item){
 				if (name === item.name){
 				console.log(item.city);
-				var city = "</br>"+ item.city +"</br>"+  item.name +"</br>"+ item.age;
+				var city = "<p>"+ item.city +"</p><h2>"+  item.name +"</h2><p>"+ item.age+"</p>";
 				
 				output1.append(city);
 				return( false );
