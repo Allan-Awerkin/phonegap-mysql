@@ -47,11 +47,7 @@ function getPage(name){
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
-		 beforeSend: function() {
-			$('#response1').text('Loading...');
-		},
 		success: function(data, status){
-		 $('#response1').html("");
 			$.each(data, function(i,item){
 				if (name === item.name){
 				console.log(item.city);
