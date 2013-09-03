@@ -11,7 +11,7 @@ function reload(){
 	output.html("");
 
 	$.ajax({
-		url: 'http://triangon.com/phonegap-mysql/conex.php',
+		url: 'http://triangon.com/phonegap-mysql/conex1.php',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
@@ -22,7 +22,7 @@ function reload(){
 		$('#response').html("");
 			$.each(data, function(i,item){
 				var landmark = '<li class="ui-li-has-thumb ui-btn ui-btn-icon-right ui-li ui-btn-down-c ui-btn-up-c"><div class="ui-btn-inner"><a onclick="getPage(\''+$.trim(item.name)+'\')" href="#page2" class="ui-link-inherit"><div class="ui-btn-text"><h3>'+item.name+'</h3>'
-				+ '<p class="ui-li-desc">'+item.city+'</p><div></a><span class="ui-icon ui-icon-arrow-r"></span></li>';
+				+ '<p class="ui-li-desc">'+item.mail+'</p><div></a><span class="ui-icon ui-icon-arrow-r"></span></li>';
 
 				output.append(landmark);
 			});
@@ -43,7 +43,7 @@ function getPage(name){
 	output1.html("");
 
 	$.ajax({
-		url: 'http://triangon.com/phonegap-mysql/conex.php',
+		url: 'http://triangon.com/phonegap-mysql/conex1.php',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
@@ -55,7 +55,7 @@ function getPage(name){
 			$.each(data, function(i,item){
 				if (name === item.name){
 				console.log(item.city);
-				var city = "<p>"+ item.city +"</p><h2>"+  item.name +"</h2><p>"+ item.age+"</p>";
+				var city = "<p>"+ item.name +"</p><h2>"+  item.uid +"</h2><p>"+ item.mail+"</p>";
 				
 				output1.append(city);
 				return( false );
